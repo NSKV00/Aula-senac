@@ -113,4 +113,3 @@ if (palavra){
             //- UMA LISTA DOS NÚMEROS QUE SÃO DIVISÍVEIS PELO MULPLICADOR INFORMADO.
 console.log(`Atividade 3`);
 
-let lista = print(`Digite sua lista:`)
