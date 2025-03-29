@@ -113,3 +113,14 @@ if (palavra){
             //- UMA LISTA DOS NÚMEROS QUE SÃO DIVISÍVEIS PELO MULPLICADOR INFORMADO.
 console.log(`Atividade 3`);
 
+const entrada = prompt(`Digite uma lista de números separada por vírgulas:`)
+const numeros = entrada.split(',').map(num => parseFloat(num.trim()))
+const mult = parseFloat(prompt(`Digite um multiplicador:`))
+
+const somat = numeros.reduce((acc, num)=> acc + num, 0)
+const divs = numeros.filter(num => num % mult === 0)
+
+console.log(`Soma total da lista: ${somat}`)
+console.log(`Números divisíveis por ${mult}: [${divs.join(', ')}]`)
+alert(`Soma total: ${somat}\nDivisíveis por ${mult}: ${divs.join(', ')}`)
+
